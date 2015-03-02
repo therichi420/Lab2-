@@ -89,19 +89,15 @@ TEST(Mul_AdditionTest, Blah) {
 	
 	c.multiply(a,b);
 
-	a.matrix[0][0]=4;
-	a.matrix[0][1]=5;
-	a.matrix[1][0]=6;
-	a.matrix[1][1]=3;
 	
 	d.addmulti(c,a);
 
 	
 	
-  EXPECT_EQ(c.matrix[0][0], 50);
-  EXPECT_EQ(c.matrix[0][1], 40);
-  EXPECT_EQ(c.matrix[1][0], 48);
-  EXPECT_EQ(c.matrix[1][1], 42);
+  EXPECT_EQ(d.matrix[0][0], 50);
+  EXPECT_EQ(d.matrix[0][1], 40);
+  EXPECT_EQ(d.matrix[1][0], 48);
+  EXPECT_EQ(d.matrix[1][1], 42);
 }
  
 
